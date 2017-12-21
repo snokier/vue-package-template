@@ -1,0 +1,28 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Package name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Package description",
+      "default": "A package for Vue.js"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "license": {
+      "type": "string",
+      "label": "License",
+      "default": "MIT"
+    }
+  },
+  "filters": {
+    "LICENSE": "license !== 'MIT'"
+  },
+  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev{{/inPlace}}"
+}
