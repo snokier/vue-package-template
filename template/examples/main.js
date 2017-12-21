@@ -9,7 +9,7 @@ import '../src/styles/index.styl'
 
 Vue.use(Package)
 
-new Vue({
+new Vue({ // eslint-disable-line no-new
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
 })

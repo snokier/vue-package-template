@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "{{ author }}",
   "license": "{{ license }}",
+  "main": "dist/index.common.js",
   "files": [
     "src",
     "dist"
